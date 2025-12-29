@@ -10,7 +10,30 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     
     <style>
-        /* --- ESTÉTICA FOLKLORE PREMIUM --- */
+        /* --- ESTÉTICA FOLKLORE PREMIUM --- */.preview-container {
+    width: 100%;
+    margin-bottom: 30px;
+    position: relative;
+    /* Centramos la imagen */
+    display: flex;
+    justify-content: center;
+}
+
+.app-screenshot {
+    width: 100%;
+    max-width: 600px; /* Un poco más grande para que se luzcan */
+    height: auto;
+    
+    /* ELIMINAMOS el borde y el background para que sea transparente real */
+    border: none;
+    background: transparent;
+    
+    /* MAGIA: Esta sombra sigue el contorno de los celulares */
+    filter: drop-shadow(0 20px 30px rgba(0,0,0,0.5));
+    
+    /* Animación de entrada */
+    animation: fadeIn 1.5s ease-out;
+}
         :root {
             --gold: #FFCA28;
             --gold-dark: #F57F17;
@@ -219,6 +242,7 @@
 
 </body>
 </html>
+
 
 
 
