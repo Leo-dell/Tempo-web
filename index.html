@@ -60,12 +60,22 @@
 
         /* --- HEADER --- */
         .logo {
-            width: 120px;
-            height: 120px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-            margin-bottom: 20px;
-            border: 2px solid rgba(255, 202, 40, 0.3);
+            width: 180px;  /* Mucho más grande (antes era 120px) */
+            height: 180px;
+            
+            /* Esto lo convierte en círculo perfecto, eliminando el "cuadrado" */
+            border-radius: 50%; 
+            
+            /* Eliminamos el borde de color que tenía antes */
+            border: none; 
+            
+            /* Sombra suave para que se desprenda del fondo */
+            box-shadow: 0 15px 35px rgba(0,0,0,0.6);
+            
+            margin-bottom: 30px;
+            
+            /* Asegura que la imagen no se deforme */
+            object-fit: cover; 
         }
 
         h1 {
@@ -206,4 +216,5 @@
 
 </body>
 </html>
+
 
